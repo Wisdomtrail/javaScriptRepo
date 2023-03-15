@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <script src = "index.js" defer></script>
+    <style>
+        .outer-container{
+            border: 3px solid purple;
+            padding: 10px;
+            display: flex;
+            background-color: gray;
+            justify-content: space-between;
+            min-height: 80vh;
+        }
+        .left-container{
+            border: 3px solid red;
+            width: 70%;
+            background-color: wheat;
+        }
+        .right-container{
+            border: 3px solid beige;
+            width: 30%;
+            background-color: blueviolet;
+        }
+        p{
+    
+            font:  sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="outer-container">
+        <div class="left-container">
+            <h1 id="header">Viewing project</h1>
+            <h2 id="current"></h2>
+        </div>
+        <div class="right-container">
+            <fieldset>
+                <p>Project 1</p>
+            </fieldset>
+            <fieldset>
+                <p >Project 2</p>
+            </fieldset>
+            <fieldset>
+                <p>Project 3</p>
+            </fieldset>
+            <fieldset>
+                <p>Project 4</p>
+            </fieldset>
+            <fieldset>
+                <p>Project 5</p>
+            </fieldset>
+            <fieldset>
+                <p>Project 6</p>
+            </fieldset>
+           
+        </div>
+    </div>
+    <script>
+        var d = document.body.firstElementChild
+        console.log(d.childNodes)
+        document.getElementsByTagName("p")
+        console.log(tag)
+    </script>
+
+</body>
+</html>
